@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="reset.css" rel="stylesheet">
 	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
 	<div id="page">
 		<div id="header">
 			<div id="pageTitle"></div>
-			<div id="links"></div>
+			<div id="links">
+				<div id="settings" class="headerLink"><img src="img/gear.png" width="25px" height="25px"></img></div>
+				<div id="help" class="headerLink"><img src="img/help.png" width="25px" height="25px"></img></div>
+			</div>
 		</div>
 		<div id="homepage" class="page">
 			<div id="info">
 				<h1>Parkit</h1>
-				<div id="icon"><img src="icon.png"></img></div>
+				<div id="icon"><img src="img/icon.png"></img></div>
 				<h2>Parking made easy.</h2>	
 			</div>
 			<div id="homeButtons">
@@ -22,7 +26,7 @@
 			</div>
 		</div>
 		<div id="findParking" class="page">
-			<div class="map"><img src="map.png"></img></div>	
+			<div class="map"><img src="img/map.png"></img></div>	
 			<div class="footer">
 				<div class="info" id="info1">
 					<div id="address">5000 Forbes Ave.</div>
@@ -39,22 +43,58 @@
 			</div>
 		</div>
 		<div id="gps" class="page">
-			<div class="map"><img src="map.png"></img></div>
+			<div class="map"><img src="img/map.png"></img></div>
 			<div class="footer">
-				<div class="info" id="info2">
+				<div class="knurl">^</div>
+				<div class="info" id="info3">
+					<h3>Destination:</h3>
 					<div id="address">400 S. Craig St</div>
 					<div id="price">$2.00/hr</div>
 					<div id="timeLimit">3 hour limit</div>
 				</div>
-				<button id="directions" class="footerButton">Directions</button>
 				<button id="park" class="footerButton">Park Here</button>
 			</div>	
 		</div>
-		<div id="gpsText" class="page"></div>
-		<div id="payment" class="page"></div>
-		<div id="paymentChooseCar" class="page"></div>
-		<div id="paymentChooseMethod" class="page"></div>
-		<div id="paymentNotifications" class="page"></div>
+		<div id="gpsText" class="page">
+			<div class="knurl">v</div>
+			<div id="directions">blahb lahb labhlabhalhb </div>
+		</div>
+		<div id="payment" class="page">
+			<div id="selectCar" class="subMenu">
+				<div class="menuTitle">Choose Car:</div>
+				<div class="menuOptions">
+					<ul>
+						<li>car 1</li>
+						<li>car 2</li>
+						<li>car 3</li>
+					</ul>
+					<div id="addCar" class="addButton"></div>
+				</div>
+			</div>
+			<div id="selectPayment" class="subMenu">
+				<div class="menuTitle">Choose Payment:</div>
+				<div class="menuOptions">
+					<ul>
+						<li>pay1</li>
+						<li>pay2</li>
+						<li>pay3</li>
+					</ul>
+					<div id="addPayment" class="addButton"></div>
+				</div>
+			</div>
+			<div id="selectNotification" class="subMenu">
+				<div class="menuTitle">Notifications:</div>
+				<div class="menuOptions">
+					<ul>
+						<li>notification blah</li>
+					</ul>
+					<div id="editNotifications" class="editButton"></div>
+				</div>
+			</div>
+		</div>
+		<div id="paymentAddCar" class="page"></div>
+		<div id="paymentAddPayment" class="page"></div>
+		<div id="paymentEditNotifications" class="page"></div>
 		<div id="parked" class="page"></div>
 		<div id="findCar" class="page"></div>
 		<div id="doneParking" class="page"></div>
