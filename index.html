@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-	<div id="header"></div>
-	<div id="homepage"></div>
-	<div id="findparking"></div>
-	<div id="gps"></div>
-	<div id="gpsText"></div>
-	<div id="payment"></div>
-	<div id="paymentChooseCar"></div>
-	<div id="paymentChooseMethod"></div>
-	<div id="paymentNotifications"></div>
-	<div id="parked"></div>
-	<div id="findCar"></div>
-	<div id="doneParking"></div>
+	<div id="page">
+		<div id="header">
+			<div id="pageTitle"></div>
+			<div id="links"></div>
+		</div>
+		<div id="homepage" class="page">
+			<div id="info">
+				<h1>Parkit</h1>
+				<div id="icon"><img src="icon.png"></img></div>
+				<h2>Parking made easy.</h2>	
+			</div>
+			<div id="homeButtons">
+				<!--<button id="signIn">Sign In</button>
+				<button id="signUp">Sign Up</button>-->
+				<button id="go">Go!</button>
+			</div>
+		</div>
+		<div id="findParking" class="page">
+			<div class="map"><img src="map.png"></img></div>	
+			<div class="footer">
+				<div class="info" id="info1">
+					<div id="address">5000 Forbes Ave.</div>
+					<div id="price">$5.00/hr</div>
+					<div id="timeLimit">1 hour limit</div>
+				</div>
+				<div class="info" id="info2">
+					<div id="address">400 S. Craig St</div>
+					<div id="price">$2.00/hr</div>
+					<div id="timeLimit">3 hour limit</div>
+				</div>
+				<button id="directions" class="footerButton">Directions</button>
+				<button id="park" class="footerButton">Park Here</button>
+			</div>
+		</div>
+		<div id="gps" class="page">
+			<div class="map"><img src="map.png"></img></div>
+			<div class="footer">
+				<div class="info" id="info2">
+					<div id="address">400 S. Craig St</div>
+					<div id="price">$2.00/hr</div>
+					<div id="timeLimit">3 hour limit</div>
+				</div>
+				<button id="directions" class="footerButton">Directions</button>
+				<button id="park" class="footerButton">Park Here</button>
+			</div>	
+		</div>
+		<div id="gpsText" class="page"></div>
+		<div id="payment" class="page"></div>
+		<div id="paymentChooseCar" class="page"></div>
+		<div id="paymentChooseMethod" class="page"></div>
+		<div id="paymentNotifications" class="page"></div>
+		<div id="parked" class="page"></div>
+		<div id="findCar" class="page"></div>
+		<div id="doneParking" class="page"></div>
+	</div>
+
+	<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
 </body>
 </html>
