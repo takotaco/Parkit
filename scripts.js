@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$('#homepage').show();
 
 	$('#go').click(function() {
+		$('#homepage').hide();
 		$('.page').hide();
 		$('#findParking').show();
 		$('#header').show();
@@ -31,12 +32,15 @@ $(document).ready(function() {
 	$('#findParking #park').click(function() {
 		$('.page').hide();
 		$('#payment').show();
+		$('#pageTitle').html('Parking Options');
+		$('#links').hide();
 	})
 
 	$('#gps #park').click(function() {
 		$('.page').hide();
 		$('#payment').show();
-		$('#header').html('Parking Options');
+		$('#pageTitle').html('Parking Options');
+		$('#links').hide();
 	})
 
 	$('.subMenu .menuOptions li').click(function() {
