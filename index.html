@@ -70,11 +70,11 @@
 				<div class="menuTitle">Choose Car:</div>
 				<div class="menuOptions">
 					<ul>
-						<li>car 1</li>
-						<li>car 2</li>
-						<li>car 3</li>
+						<li><img src="img/car_blue.png" width="50px"></img> FEU4301</li>
+						<li><img src="img/car_gold.png" width="50px"></img> SGQ2476</li>
+						<li><img src="img/car_red.png" width="50px"></img> CNP7834</li>
 					</ul>
-					<div id="addCar" class="addButton"></div>
+					<div id="addCar" class="addButton">Add Car <img src="img/plus.png" class="iconButton" width="25px" height="25px"></img></div>
 				</div>
 			</div>
 			<div id="selectPayment" class="subMenu">
@@ -85,7 +85,7 @@
 						<li>pay2</li>
 						<li>pay3</li>
 					</ul>
-					<div id="addPayment" class="addButton"></div>
+					<div id="addPayment" class="addButton">Add Payment Option <img class="iconButton" src="img/plus.png" width="25px" height="25px"></img></div>
 				</div>
 			</div>
 			<div id="selectNotification" class="subMenu">
@@ -94,11 +94,45 @@
 					<ul>
 						<li>notification blah</li>
 					</ul>
-					<div id="editNotifications" class="editButton"></div>
+					<div id="editNotifications" class="editButton">Edit Notification Settings <img class="iconButton" src="img/edit.png" width="25px" height="25px"></img></div>
 				</div>
 			</div>
+			<div class="footer">
+				<button id="parkNow" class="footerButton">Park Now</button>
+			</div>
 		</div>
-		<div id="paymentAddCar" class="page"></div>
+		<div id="paymentAddCar" class="page">
+			<div id="licenseInfo" class="subMenu">
+				<div class="menuTitle">Enter License Plate Number:</div>
+				<div class="menuOptions">
+					<input type="text" name="licenseNumber" placeholder="ex. ABC1234"></input>
+				</div>
+			</div>
+			<div id="carColor" class="subMenu">
+				<div class="menuTitle">Choose Car Color:</div>
+				<div class="menuOptions" id="colorCols">
+					<ul id="colorCol1">
+						<li class="carColor"><img src="img/car_red.png" width="50px"></img></li>
+						<li class="carColor"><img src="img/car_blue.png" width="50px"></img></li>
+						<li class="carColor"><img src="img/car_black.png" width="50px"></img></li>
+					</ul>
+					<ul id="colorCol2">
+						<li class="carColor"><img src="img/car_gold.png" width="50px"></img></li>
+						<li class="carColor"><img src="img/car_purple.png" width="50px"></img></li>
+						<li class="carColor"><img src="img/car_silver.png" width="50px"></img></li>
+					</ul>
+					<ul id="colorCol3">
+						<li class="carColor"><img src="img/car_green.png" width="50px"></img></li>
+						<li class="carColor"><img src="img/car_pink.png" width="50px"></img></li>
+						<li class="carColor"><img src="img/car_white.png" width="50px"></img></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<button id="cancelAddCar" class="footerButton">Cancel</button><button id="addCarButton" class="footerButton">Add Car</button>
+
+			</div>
+		</div>
 		<div id="paymentAddPayment" class="page"></div>
 		<div id="paymentEditNotifications" class="page"></div>
 		<div id="parked" class="page"></div>

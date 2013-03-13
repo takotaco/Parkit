@@ -2,6 +2,7 @@ body {
 	font-size: 20px;
 	font-family: sans-serif;
 	overflow: hidden;
+	background-color: #f5f0f1;
 }
 
 button {
@@ -20,6 +21,7 @@ button {
 	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	border-bottom: 1px black solid;
 }
 
 #pageTitle {
@@ -28,8 +30,12 @@ button {
 }
 
 .page {
-	padding-top: 50px;
+	padding-top: 46px; 
+	padding-bottom: 0px;
 	padding-bottom:100px;
+	background-color: #f5f0f1;
+	height:100%;
+	width:100%;
 }
 
 #links {
@@ -58,6 +64,7 @@ button {
 }
 
 .footer {
+	border-top: 1px black solid;
 	position:fixed;
 	bottom:0px;
 	width:100%;
@@ -77,6 +84,36 @@ button {
 	overflow: hidden;
 }
 
+.subMenu {
+	padding-left:15px;
+	padding-top:15px;
+}
+
+.menuTitle {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.menuOptions {
+	padding-left:10px;
+}
+
+li {
+	/*width: 100%;*/
+}
+
+li, .addButton, .editButton{
+	position: relative;
+	padding:5px;
+	padding-left:10px;
+}
+
+.iconButton {
+	position:absolute;
+	bottom:5px;
+	padding-left:5px;
+}
+
 .knurl {
 	background-color: lightgray;
 	margin-top:-10px;
@@ -84,4 +121,28 @@ button {
 
 .menuOptions .selected {
 	background-color: lightgray;
+	border: 1px solid black;
+}
+
+.carColor {
+	/*width:100%;*/
+	padding:10px;
+}
+
+#colorCol1 {
+	float:left;
+}
+
+#colorCol2 {
+	float:left;
+}
+
+#colorCol3 {
+	float:left;
+}
+
+input {
+	height:30px;
+	width:150px;
+	font-size: 20px;
 }

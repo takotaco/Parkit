@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	$('.addButton').html('<img src="img/plus.png" width="25px" height="25px"></img>');
 	$('.page').hide();
 	$('#header').hide();
 	$('#homepage').show();
@@ -45,7 +44,28 @@ $(document).ready(function() {
 
 	$('.subMenu .menuOptions li').click(function() {
 		var menuItem = $(this);
-		menuItem.parent().children().removeClass('selected');
+		menuItem.parent().parent().children().children().removeClass('selected');
 		menuItem.addClass('selected');
 	})
+
+	$('#addCar').click(function() {
+		$('.page').hide();
+		$('#paymentAddCar').show();
+		$('#pageTitle').html('Add Car');
+
+	})
+
+	$('#addPayment').click(function() {
+		$('.page').hide();
+		$('#paymentAddPayment').show();
+		$('#pageTitle').html('Add Payment Option');
+	})
+
+	$('#editNotifications').click(function() {
+		$('.page').hide();
+		$('#paymentEditNotifications').show();
+		$('#pageTitle').html('Edit Notifications');
+	})
+
+
 });
