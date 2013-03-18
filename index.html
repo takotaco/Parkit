@@ -41,7 +41,8 @@
 			</div>
 		</div>
 		<div id="findParking" class="page">
-			<div class="map"><img src="img/newmap.png"></img></div>	
+			<div id="map1" class="map"><img src="img/allParking.png"></img></div>	
+			<div id="map2" class="map"><img src="img/selectedParking.png"></img></div>
 			<div class="footer">
 				<div class="info" id="info1">
 					<div id="address">5000 Forbes Ave.</div>
@@ -57,7 +58,7 @@
 			</div>
 		</div>
 		<div id="gps" class="page">
-			<div class="map"><img src="img/newmap.png"></img></div>
+			<div class="map"><img src="img/map_to_parking.jpeg"></img></div>
 			<div class="footer">
 				<div class="knurl">^</div>
 				<div class="info" id="info3">
@@ -70,10 +71,10 @@
 			</div>	
 		</div>
 		<div id="gpsText" class="page">
-			<div class="map"><img src="img/newmap.png"></img></div>
+			<div class="map"><img src="img/map_to_parking.jpeg"></img></div>
 			<div class="footer">
 				<div class="knurl">v</div>
-				<div id="directions">blahb lahb labhlabhalhb </div>
+				<div id="directions"><img src="img/direction_to_parking.jpeg"></img></div>
 			</div>
 		</div>
 		<div id="payment" class="page">
@@ -90,16 +91,14 @@
 			</div>
 			<div id="selectPayment" class="subMenu">
 				<div class="menuTitle">Choose Payment:</div>
-				<div class="menuOptions">
+				<div id="paymentChoices" class="menuOptions">
 					<ul>
-						<li>pay1</li>
-						<li>pay2</li>
-						<li>pay3</li>
+						<li><img src="img/paypal.jpg" width="50px"></img></li>
 					</ul>
 					<div id="addPayment" class="addButton">Add Payment Option <img class="iconButton" src="img/plus.png" width="25px" height="25px"></img></div>
 				</div>
 			</div>
-			<div id="selectNotification" class="subMenu">
+			<!--<div id="selectNotification" class="subMenu">
 				<div class="menuTitle">Notifications:</div>
 				<div class="menuOptions">
 					<ul>
@@ -107,7 +106,7 @@
 					</ul>
 					<div id="editNotifications" class="editButton">Edit Notification Settings <img class="iconButton" src="img/edit.png" width="25px" height="25px"></img></div>
 				</div>
-			</div>
+			</div>-->
 			<div class="footer">
 				<button id="cancelParking" class="footerButton">Cancel</button><button id="parkNow" class="footerButton">Park Now</button>
 			</div>
@@ -145,6 +144,22 @@
 			</div>
 		</div>
 		<div id="paymentAddPayment" class="page">
+			<div class="subMenu">
+				<div class="menuTitle">Add Credit Card:</div>
+				<div class="menuOptions">
+					<input type="text" name="cardNumber" placeholder="Credit Card Number" id="cardNumber"></input>
+					<input type="text" name="CV2" placeholder="CV2" id="CV2"></input>
+				</div>
+			</div>
+			<div class="subMenu">
+				<div class="menuTitle">Expiration Date:</div>
+				<div class="menuOptions">
+					<input type="text" name="expMonth" placeholder="Month" id="month"></input>
+					<input type="text" name="expYear" placeholder="Year" id="year"></input>
+				</div>
+			</div>
+			
+
 			<div class="footer">
 				<button id="cancelAddPayment" class="footerButton">Cancel</button><button id="addPaymentButton" class="footerButton">Add Payment</button>
 			</div>
@@ -155,7 +170,7 @@
 			</div>
 		</div>
 		<div id="parked" class="page">
-			<div class="map"><img src="img/newmap.png"></img></div>
+			<div class="map"><img src="img/carLocation.jpg"></img></div>
 			<div class="footer">
 				<div class="info" id="info4">
 					<h3>You are Parked At:</h3>
@@ -167,7 +182,7 @@
 			</div>	
 		</div>
 		<div id="findCar" class="page">
-			<div class="map"><img src="img/newmap.png"></img></div>
+			<div class="map"><img src="img/map_to_car.jpeg"></img></div>
 			<div class="footer">
 				<div class="knurl">^</div>
 				<div class="info" id="info5">
@@ -180,14 +195,22 @@
 			</div>	
 		</div>
 		<div id="findCarText" class="page">
-			<div class="map"><img src="img/newmap.png"></img></div>
+			<div class="map"><img src="img/map_to_car.jpeg"></img></div>
 			<div class="footer">
 				<div class="knurl">v</div>
-				<div id="directionsToCar">blahb lahb labhlabhalhb </div>
+				<div id="directionsToCar"><img src="img/direction_to_car.jpeg"></img></div>
 			</div>
 		</div>
 		<div id="doneParking" class="page">
-			Something goes here...
+			<div class="map"><img src="img/map_to_car.jpeg"></img></div>
+			<div id="sessionInfo">
+				<strong>Session Complete</strong></br>
+				Time: 1hr 30mins</br>
+				Total Cost: $3.00</br>
+			</div>
+			<div class="footer">
+				<button id="Ok" class="footerButton">OK</button>
+			</div>
 		</div>
 	</div>
 

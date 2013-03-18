@@ -10,6 +10,21 @@ $(document).ready(function() {
 		$('#header').show();
 		$('#pageTitle').html('Find Parking');
 		$('#info2').hide();
+		$('#map2').hide();
+		$('#directions').hide();
+	});
+
+	$('#map1').click(function(e) {
+
+		var x = e.clientX;
+		var y = e.clientY;
+		if (x >= 173 && x <= 210 && y >= 183 && y <= 245) {
+			$('#map1').hide();
+			$('#map2').show();
+			$('#info1').hide();
+			$('#info2').show();
+			$('#directions').show();
+		}
 	});
 
 	$('#findParking #directions').click(function() {
@@ -102,8 +117,9 @@ $(document).ready(function() {
 	$('#addCarButton').click(function() {
 		var license = $('#licenseNumber').val();
 		//choose the selected color
-		//var color = $('#paymentAddCar li')
-		var color = 'blue';
+		var color = $('#paymentAddCar .selected').attr('id');
+		console.log(color);
+		//var color = 'blue';
 		//add the new car
 		$('#carChoices ul').append('<li><img src="img/car_' + color + '.png" width="50px"></img> ' + license + '</li>');
 
@@ -112,12 +128,39 @@ $(document).ready(function() {
 		$('.page').hide();
 		$('#payment').show();
 		$('#pageTitle').html('Parking Options');
+
+		$('.subMenu .menuOptions li').click(function() {
+			var menuItem = $(this);
+			menuItem.parent().parent().children().children().removeClass('selected');
+			menuItem.addClass('selected');
+		});
+	});
+
+	$('#addPaymentButton').click(function() {
+		var carNum = $('#cardNumber').val();
+
+		$('#paymentChoices ul').append('<li><img src="img/visa.jpg" width="50px"></img> ' + carNum + '</li>');
+
+		$('#cardNumber').val('');
+		$('#CV2').val('');
+		$('#month').val('');
+		$('#year').val('');
+
+		$('.page').hide();
+		$('#payment').show();
+		$('#pageTitle').html('Parking Options');
+
+		$('.subMenu .menuOptions li').click(function() {
+			var menuItem = $(this);
+			menuItem.parent().parent().children().children().removeClass('selected');
+			menuItem.addClass('selected');
+		});
 	});
 
 	$('#parkNow').click(function() {
 		$('.page').hide();
 		$('#parked').show();
-		$('#pageTitle').html('Something???');
+		$('#pageTitle').html('Parked');
 	});
 
 	$('#findCarButton').click(function () {
@@ -141,19 +184,28 @@ $(document).ready(function() {
 	$('#doneParkingButton').click(function() {
 		$('.page').hide();
 		$('#doneParking').show();
-		$('#pageTitle').html('Thanks come again');
+		$('#pageTitle').html('Done Parking');
 	});
 
 	$('#doneFinding').click(function() {
 		$('.page').hide();
 		$('#doneParking').show();
-		$('#pageTitle').html('Thanks come again');
+		$('#pageTitle').html('Done Parking');
 	});
 
 	$('#backToParked').click(function() {
 		$('.page').hide();
 		$('#parked').show();
-		$('#pageTitle').html('Something???');
+		$('#pageTitle').html('Parked');
 	});
 
+	$('#Ok').click(function() {
+		$('.page').hide();
+		$('#findParking').show();
+		$('#pageTitle').html('Find Parking');
+		$('#info2').hide();
+		$('#map2').hide();
+		$('#directions').hide();
+
+	});
 });

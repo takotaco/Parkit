@@ -74,9 +74,9 @@ button {
 	font-size: 20px;
 	width: 90%;
 	border-radius: 5px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	color: black;
-	background-color: #90d8c8;
+	/*background-color: #90d8c8;*/
 }
 
 #info {
@@ -101,10 +101,10 @@ button {
 	width: 45%;
 	padding:5px;
 	border-radius: 5px;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	margin:5px;
 	color: black;
-	background-color: #90d8c8;
+	/*background-color: #90d8c8;*/
 }
 
 /*look up button properties
@@ -113,6 +113,9 @@ button :active {
 }*/
 
 .map {
+	position: absolute;
+	top:0px;
+	left:0px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -178,4 +181,34 @@ input {
 	height:30px;
 	width:150px;
 	font-size: 20px;
+}
+
+#CV2 {
+	width:25%;
+}
+
+#cardNumber {
+	width:50%;
+}
+
+#sessionInfo {
+	text-align: center;
+	z-index: 3;
+	position: fixed;
+	width: 200px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin-top:-60px;
+	margin-left:-110px;
+	background-color: white;
+	padding:10px;
+	padding-top: 45px;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+strong {
+	font-weight: bold;
+	line-height: 25px;
 }
