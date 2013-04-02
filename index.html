@@ -25,61 +25,49 @@
 				<div id="help" class="headerLink"><img src="img/help.png" width="25px" height="25px"></img></div>
 			</div>
 		</div>
+		<div id="map"><div id="map-canvas"></div></div>
 		<div class="clear"></div>
 		<div id="homepage">
+			<img id="carPic" src="img/mainScreen.png"></img>
 			<div id="info">
 				<h1>Parkit</h1>
-				<!--<div id="icon"><img src="img/icon.png"></img></div>-->
 				<h2>Parking made easy.</h2>	
-			</div>
-			<div class="footer">
-				<div id="homeButtons">
-					<!--<button id="signIn">Sign In</button>
-					<button id="signUp">Sign Up</button>-->
-					<button id="go" class="footerButton">Go!</button>
-				</div>
+				<div id="go">Go!</div>
 			</div>
 		</div>
 		<div id="findParking" class="page">
-			<div id="map1" class="map"><img src="img/allParking.png"></img></div>	
-			<div id="map2" class="map"><img src="img/selectedParking.png"></img></div>
 			<div class="footer">
-				<div class="info" id="info1">
-					<div id="address">5000 Forbes Ave.</div>
-					<div id="price">$5.00/hr</div>
-					<div id="timeLimit">1 hour limit</div>
-				</div>
-				<div class="info" id="info2">
-					<div id="address">400 S. Craig St</div>
-					<div id="price">$2.00/hr</div>
-					<div id="timeLimit">3 hour limit</div>
+				<div class="info">
+					<div id="areaType"></div>
+					<div id="address"></div>
+					<div id="price"></div>
+					<div id="timeLimit"></div>
+					<div id="hours"></div>
 				</div>
 				<button id="directions" class="footerButton">Directions</button><button id="park" class="footerButton">Park Here</button>
 			</div>
 		</div>
 		<div id="gps" class="page">
-			<div class="map"><img src="img/map_to_parking.jpeg"></img></div>
 			<div class="footer">
-				<div class="knurl">^</div>
-				<div class="info" id="info3">
+				<div class="knurl"></div>
+				<div class="info">
 					<h3>Destination:</h3>
-					<div id="address">400 S. Craig St</div>
-					<div id="price">$2.00/hr</div>
-					<div id="timeLimit">3 hour limit</div>
+					<div id="address"></div>
+					<div id="price"></div>
+					<div id="timeLimit"></div>
 				</div>
 				<button id="backToFindParking" class="footerButton">Back</button><button id="park" class="footerButton">Park Here</button>
 			</div>	
 		</div>
 		<div id="gpsText" class="page">
-			<div class="map"><img src="img/map_to_parking.jpeg"></img></div>
 			<div class="footer">
-				<div class="knurl">v</div>
-				<div id="directions"><img src="img/direction_to_parking.jpeg"></img></div>
+				<div class="knurl"></div>
+				<div id="directions"></div>
 			</div>
 		</div>
 		<div id="payment" class="page">
 			<div id="selectCar" class="subMenu">
-				<div class="menuTitle">Choose Car:</div>
+				<div class="menuTitle">Select Car:</div>
 				<div id="carChoices" class="menuOptions">
 					<ul>
 						<li><img src="img/car_blue.png" width="50px"></img> FEU4301</li>
@@ -90,12 +78,12 @@
 				</div>
 			</div>
 			<div id="selectPayment" class="subMenu">
-				<div class="menuTitle">Choose Payment:</div>
+				<div class="menuTitle">Select Payment:</div>
 				<div id="paymentChoices" class="menuOptions">
 					<ul>
 						<li><img src="img/paypal.jpg" width="50px"></img></li>
 					</ul>
-					<div id="addPayment" class="addButton">Add Payment Option <img class="iconButton" src="img/plus.png" width="25px" height="25px"></img></div>
+					<!--<div id="addPayment" class="addButton">Add Payment Option <img class="iconButton" src="img/plus.png" width="25px" height="25px"></img></div>-->
 				</div>
 			</div>
 			<!--<div id="selectNotification" class="subMenu">
@@ -108,7 +96,7 @@
 				</div>
 			</div>-->
 			<div class="footer">
-				<button id="cancelParking" class="footerButton">Cancel</button><button id="parkNow" class="footerButton">Park Now</button>
+				<button id="cancelParking" class="footerButton">Back</button><button id="parkNow" class="footerButton">Park Now</button>
 			</div>
 		</div>
 		<div id="paymentAddCar" class="page">
@@ -119,7 +107,7 @@
 				</div>
 			</div>
 			<div id="carColor" class="subMenu">
-				<div class="menuTitle">Choose Car Color:</div>
+				<div class="menuTitle">Select Car Color:</div>
 				<div class="menuOptions" id="colorCols">
 					<ul id="colorCol1">
 						<li id="red" class="carColor"><img src="img/car_red.png" width="50px"></img></li>
@@ -139,11 +127,11 @@
 				</div>
 			</div>
 			<div class="footer">
-				<button id="cancelAddCar" class="footerButton">Cancel</button><button id="addCarButton" class="footerButton">Add Car</button>
+				<button id="cancelAddCar" class="footerButton">Back</button><button id="addCarButton" class="footerButton">Add Car</button>
 
 			</div>
 		</div>
-		<div id="paymentAddPayment" class="page">
+		<!--<div id="paymentAddPayment" class="page">
 			<div class="subMenu">
 				<div class="menuTitle">Add Credit Card:</div>
 				<div class="menuOptions">
@@ -163,50 +151,45 @@
 			<div class="footer">
 				<button id="cancelAddPayment" class="footerButton">Cancel</button><button id="addPaymentButton" class="footerButton">Add Payment</button>
 			</div>
-		</div>
+		</div>-->
 		<div id="paymentEditNotifications" class="page">
 			<div class="footer">
-				<button id="cancelEditNotifications" class="footerButton">Cancel</button><button id="saveNotifications" class="footerButton">Save Changes</button>
+				<button id="cancelEditNotifications" class="footerButton">Back</button><button id="saveNotifications" class="footerButton">Save Changes</button>
 			</div>
 		</div>
 		<div id="parked" class="page">
-			<div class="map"><img src="img/carLocation.jpg"></img></div>
 			<div class="footer">
 				<div class="info" id="info4">
 					<h3>You are Parked At:</h3>
-					<div id="address">400 S. Craig St</div>
-					<div id="price">$2.00/hr</div>
-					<div id="timeLimit">3 hour limit</div>
+					<div id="address"></div>
+					<div id="price"></div>
+					<div id="timeLimit"></div>
 				</div>
 				<button id="findCarButton" class="footerButton">Find Car</button><button id="doneParkingButton" class="footerButton">Done Parking</button>
 			</div>	
 		</div>
 		<div id="findCar" class="page">
-			<div class="map"><img src="img/map_to_car.jpeg"></img></div>
 			<div class="footer">
-				<div class="knurl">^</div>
+				<div class="knurl"></div>
 				<div class="info" id="info5">
 					<h3>You are Parked At:</h3>
-					<div id="address">400 S. Craig St</div>
-					<div id="price">$2.00/hr</div>
-					<div id="timeLimit">3 hour limit</div>
+					<div id="address"></div>
+					<div id="price"></div>
+					<div id="timeLimit"></div>
 				</div>
 				<button id="backToParked" class="footerButton">Back</button><button id="doneFinding" class="footerButton">Done Parking</button>
 			</div>	
 		</div>
 		<div id="findCarText" class="page">
-			<div class="map"><img src="img/map_to_car.jpeg"></img></div>
 			<div class="footer">
-				<div class="knurl">v</div>
-				<div id="directionsToCar"><img src="img/direction_to_car.jpeg"></img></div>
+				<div class="knurl"></div>
+				<div id="directionsToCar"></div>
 			</div>
 		</div>
 		<div id="doneParking" class="page">
-			<div class="map"><img src="img/map_to_car.jpeg"></img></div>
+			<div class="map"></div>
 			<div id="sessionInfo">
-				<strong>Session Complete</strong></br>
-				Time: 1hr 30mins</br>
-				Total Cost: $3.00</br>
+				<strong>Session Complete</strong>
 			</div>
 			<div class="footer">
 				<button id="Ok" class="footerButton">OK</button>
@@ -216,5 +199,8 @@
 
 	<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="scripts.js" type="text/javascript"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+	<script type="text/javascript" src="mapStuff.js"></script>
+
 </body>
 </html>

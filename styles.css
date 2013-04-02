@@ -1,6 +1,11 @@
+@font-face {
+	font-family: avenir;
+	src: url('Avenir.ttc');
+}
+
 body {
 	font-size: 15px;
-	font-family: sans-serif;
+	font-family: avenir;
 	overflow: hidden;
 	background-color: #f5f0f1;
 }
@@ -9,18 +14,38 @@ button {
 	font-size: 25px;
 }
 
+.map > img {
+	width: 100%;
+}
+
+.footer > img {
+	width: 100%;
+}
+
 #homepage > #info > h1 {
 	position: absolute;
-	top: 150px;
-	left:50px;
+	top: 50px;
+	left:30px;
 	font-size:50px;
 }
 
 #homepage > #info > h2 {
 	position: absolute;
-	top:200px;
-	left:100px;
+	top:100px;
+	left:70px;
 	font-size:25px;
+}
+
+#go {
+	z-index: 3;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	padding:15px;
+	color:black;
+	font-size: 25px;
+	border-radius: 5px;
+	border: 1px black solid;
 }
 
 #header {
@@ -32,7 +57,6 @@ button {
 	color: black;
 	text-align: center;
 	font-size: 15px;
-	font-family: sans-serif;
 	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -138,6 +162,21 @@ li {
 	/*width: 100%;*/
 }
 
+#areaType {
+	font-weight: bold;
+	font-size: 17px;
+}
+
+#map-canvas {
+	width:320px;
+	height:480px;
+}
+
+#map {
+	position: absolute;
+	top: 42px;
+}
+
 li, .addButton, .editButton{
 	position: relative;
 	padding:5px;
@@ -151,8 +190,11 @@ li, .addButton, .editButton{
 }
 
 .knurl {
+	background-repeat: repeat;
+	background-image: url('img/knurl.png');
 	background-color: lightgray;
 	margin-top:-10px;
+	height:10px;
 }
 
 .menuOptions .selected {
